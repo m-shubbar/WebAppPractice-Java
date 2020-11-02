@@ -4,6 +4,7 @@
     Author     : Mustafa Shubbar <codingbox@outlook.com>
 --%>
 
+<%@page import="java.util.Enumeration"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -52,5 +53,20 @@
             }
         %>
         <br><br>Total : <%=total%>
+        
+        
+        <hr>
+        <h3>Getting all parameters using loop</h3>
+        <%
+            Enumeration params = request.getParameterNames();
+            while(params.hasMoreElements()) {
+                String pName = (String) params.nextElement();
+                String pValue = request.getParameter(pName);
+        %>
+        <br>Name: <%=pName%>, Value: <%=pValue%>
+        <%
+            }
+        %>
+        
     </body>
 </html>
