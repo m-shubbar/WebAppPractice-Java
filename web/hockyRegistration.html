@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Hockey Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="HockeyServlet" method="Get">
+            <label>Name</label>
+            <input type="text" size="20" name="name">
+            <br>
+            <label>Address</label>
+            <input type="text" size="20" name="address">
+            <br>
+            <label>Team</label>
+            <input type="radio" name="team" value="Red">Red
+            <input type="radio" name="team" value="Blue">Blue
+            <br>
+            <label>Role</label>
+            <select name="role">
+                <option value="goalie">Goalie</option>
+                <option value="defence">Defense</option>
+                <option value="forward">Forward</option>
+            </select>
+            <br>
+            <label>Active</label>
+            <input type="checkbox" name="active">
+            <br>
+            <input type="submit" value="Save">
+        </form>
+    </body>
+</html>
