@@ -8,17 +8,9 @@
         <servlet-name>TestListenersServlet</servlet-name>
         <servlet-class>ex1.TestListenersServlet</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>AddStudentServlet</servlet-name>
-        <servlet-class>ex1.AddStudentServlet</servlet-class>
-    </servlet>
     <servlet-mapping>
         <servlet-name>TestListenersServlet</servlet-name>
         <url-pattern>/TestListenersServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>AddStudentServlet</servlet-name>
-        <url-pattern>/AddStudentServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

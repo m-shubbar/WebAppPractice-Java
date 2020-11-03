@@ -13,9 +13,10 @@
     </head>
     <body>
         <h2>Add Student:</h2>
+        <p><a href="studentView.jsp">View All Students</a></p>
         <form action="AddStudentServlet" method="GET">
             Name: <input type="text" size="20" name="name"><br><br>
-            Number: <input type="text" size="20" name="address"><br><br>
+            Number: <input type="text" size="20" name="number"><br><br>
             Program: <select name="program" >
                 <option value="barts">Bachelor of Arts</option>
                 <option value="bhealth">Bachelor of Health Science</option>

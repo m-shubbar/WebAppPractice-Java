@@ -49,9 +49,9 @@ public class AddStudentServlet extends HttpServlet {
             
             students.add(newStudent);
             session.setAttribute("students-list", students);
-            response.sendRedirect("addStudent.jsp");
+            response.sendRedirect("studentAdd.jsp");
         } else {
-            response.sendRedirect("index.jsp");
+            response.sendRedirect("studentIndex.jsp");
         }
     }
 

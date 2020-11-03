@@ -13,7 +13,7 @@
     </head>
     <body>
         <h1>Student Management using JavaBeans</h1>
-        <p><a href="viewStudents.jsp">View All Students</a> | <a href="addStudent.jsp">Add Student</a></p>
+        <p><a href="studentView.jsp">View All Students</a> | <a href="studentAdd.jsp">Add Student</a></p>
         <hr>
     </body>
 </html>
